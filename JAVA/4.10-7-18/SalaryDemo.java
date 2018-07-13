@@ -15,7 +15,7 @@ Input:empno,empname,basic
  		System.out.print("Enter empno:");
  		empno=s.nextInt();
  		System.out.print("Enter name:");
- 		empname=s.nextLine();
+ 		empname=s.next();
  		System.out.print("Enter basic pay:");
  		basic=s.nextDouble();
  		hra=0.25*basic;
@@ -41,7 +41,7 @@ Input:empno,empname,basic
  	public static void main(String args[])
  	{
  		Salary e1=new Salary();
- 		System.out.println("net="+e1.get_net_salary()+" gross="+e1.get_gross_salary());
+ 		System.out.println("Net salary ="+e1.get_net_salary()+"\nGross salary ="+e1.get_gross_salary());
  	}
 
  }
