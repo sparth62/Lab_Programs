@@ -13,6 +13,12 @@ class Box
 		System.out.print("Enter Depth:");
 		depth=s.nextDouble();
 	}
+	Box(Box b)
+	{
+		width=b.width;
+		depth=b.depth;
+		height=b.height;
+	}
 	Box(double w,double d,double h)
 	{
 		width=w;
@@ -32,6 +38,8 @@ class BoxDemo
 		b1.area();
 		Box b2=new Box(5,10,15);
 		b2.area();	
+		Box b3=new Box(b1);
+		b3.area();
 	}
 	
 }

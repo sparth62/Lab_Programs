@@ -8,9 +8,10 @@ Input:empno,empname,basic
  	int empno;
  	String empname;
  	double basic;
- 	double hra,da,pf,pt,cca,gross,net;
+ 	double net,gross;
  	Salary()
  	{
+ 		double hra,da,pf,pt,cca;
  		Scanner s=new Scanner(System.in);
  		System.out.print("Enter empno:");
  		empno=s.nextInt();
