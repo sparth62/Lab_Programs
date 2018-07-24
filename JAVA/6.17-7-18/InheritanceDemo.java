@@ -39,10 +39,10 @@ class Non_Teaching extends Office
 	Scanner s=new Scanner(System.in);
 	void setvalue()
 	{
-		System.out.print("Enter Emp no:");
+		System.out.print("\nEnter Emp no:");
 		empno=s.nextInt();
 		System.out.print("Enter Emp Name:");
-		empname=s.nextLine();
+		empname=s.next();
 		System.out.print("Enter Emp salary:");
 		salary=s.nextDouble();
 		System.out.print("Enter Designition(Non-Teaching):");
@@ -61,7 +61,9 @@ class InheritanceDemo
 	{
 		Teaching obj1= new Teaching();
 		obj1.setvalue();
-		obj1.getvalue();	
+		obj1.getvalue();
+		Non_Teaching obj2= new Non_Teaching();
+		obj2.setvalue();
+		obj2.getvalue();	
 	}
-	
 }
